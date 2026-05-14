@@ -1,6 +1,5 @@
 "use client";
 
-import StudentsHero from "./_components/StudentsHero";
 import QuickStart from "./_components/QuickStart";
 import FoodSection from "./_components/FoodSection";
 import HealthSection from "./_components/HealthSection";
