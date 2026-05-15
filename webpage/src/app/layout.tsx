@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "СибГУТИ - твой цифровой помощник!",
+    title: "СибГУТИ: первокурснику",
     description: "Отсутствует.",
 };
 
