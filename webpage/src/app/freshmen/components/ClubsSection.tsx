@@ -1,15 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-    LuChevronRight,
-    LuGamepad2,
-    LuMusic,
-    LuCode,
-    LuArrowUpRight,
-    LuDribbble,
-    LuBook
-} from "react-icons/lu";
+import { LuChevronRight, LuGamepad2, LuMusic, LuCode, LuArrowUpRight, LuDribbble, LuBook } from "react-icons/lu";
 import Link from "next/link";
 
 import asset_club1 from "@/assets/asset_club1.jpg";

@@ -2,16 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-    LuMapPin,
-    LuCompass,
-    LuCamera,
-    LuTrees,
-    LuBook,
-    LuArrowUpRight,
-    LuSparkles,
-    LuBuilding2
-} from "react-icons/lu";
+import { LuMapPin, LuCompass, LuCamera, LuTrees, LuBook, LuBuilding2 } from "react-icons/lu";
 
 export default function NearbyPlacesSection() {
     const places = [

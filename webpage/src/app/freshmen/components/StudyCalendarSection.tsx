@@ -1,16 +1,6 @@
 "use client";
 
-import {
-    LuCalendarDays,
-    LuClock,
-    LuTimer,
-    LuGraduationCap,
-    LuRotateCcw,
-    LuTriangleAlert,
-    LuZap,
-    LuBellRing,
-    LuUserCheck
-} from "react-icons/lu";
+import { LuCalendarDays, LuClock, LuTimer, LuGraduationCap, LuRotateCcw, LuUserCheck } from "react-icons/lu";
 
 export default function StudyCalendarSection() {
     const scheduleInfo = [

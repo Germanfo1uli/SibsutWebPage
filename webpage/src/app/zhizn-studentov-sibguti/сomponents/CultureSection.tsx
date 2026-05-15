@@ -3,12 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-    LuMusic4, LuPalette, LuUsers, LuArrowRight, LuCode, LuBox, LuBinary, LuLayoutList,
-    LuRadio, LuMicroscope, LuFlag, LuMonitor, LuChevronDown, LuChevronUp, LuHeart,
-    LuBriefcase, LuWaves, LuLanguages, LuSmile, LuPenTool, LuLightbulb,
-    LuMapPin, LuX
-} from "react-icons/lu";
+import { LuMusic4, LuPalette, LuUsers, LuArrowRight, LuCode, LuBox, LuBinary, LuLayoutList, LuRadio, LuMicroscope, LuFlag, LuMonitor, LuChevronDown, LuChevronUp, LuHeart, LuBriefcase, LuWaves, LuLanguages, LuSmile, LuPenTool, LuLightbulb, LuMapPin, LuX } from "react-icons/lu";
 
 const stories = [
     {

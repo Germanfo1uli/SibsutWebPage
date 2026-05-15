@@ -2,13 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-    LuIdCard, LuBookOpen, LuUser,
-    LuBusFront, LuShieldCheck, LuCreditCard,
-    LuUsers, LuBellRing, LuArrowUpRight,
-    LuCalendarDays, LuMapPin,
-    LuActivity, LuFileText, LuHeartPulse, LuSyringe
-} from "react-icons/lu";
+import { LuIdCard, LuBookOpen, LuUser, LuBusFront, LuShieldCheck, LuCreditCard, LuUsers, LuBellRing, LuArrowUpRight, LuCalendarDays, LuMapPin, LuActivity, LuFileText, LuHeartPulse, LuSyringe } from "react-icons/lu";
 import { FaVk, FaTelegramPlane } from "react-icons/fa";
 
 export default function StepsSection() {

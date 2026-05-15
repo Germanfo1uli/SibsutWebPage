@@ -1,18 +1,6 @@
 "use client";
 
-import {
-    LuCrown,
-    LuArrowUpRight,
-    LuGraduationCap,
-    LuTrophy,
-    LuMicroscope,
-    LuPalette,
-    LuUsers,
-    LuFileText,
-    LuTriangleAlert,
-    LuChevronRight,
-    LuWallet,
-} from "react-icons/lu";
+import { LuCrown, LuArrowUpRight, LuGraduationCap, LuTrophy, LuMicroscope, LuPalette, LuUsers, LuFileText, LuTriangleAlert, LuChevronRight, LuWallet } from "react-icons/lu";
 
 export default function ScholarshipSection() {
     const activities = [

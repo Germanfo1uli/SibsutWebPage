@@ -3,18 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-    LuChevronLeft,
-    LuChevronRight,
-    LuStethoscope,
-    LuHeartPulse,
-    LuUser,
-    LuMapPin,
-    LuPhone,
-    LuClock,
-    LuHeart,
-    LuX
-} from "react-icons/lu";
+import { LuChevronLeft, LuChevronRight, LuStethoscope, LuHeartPulse, LuUser, LuMapPin, LuPhone, LuClock, LuHeart,LuX } from "react-icons/lu";
 import { slideVariants } from "../lib/animations";
 import asset_zdravp1 from "@/assets/asset_zdravp1.jpg";
 import asset_zdravp2 from "@/assets/asset_zdravp2.jpg";

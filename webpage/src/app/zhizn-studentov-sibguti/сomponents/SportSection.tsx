@@ -3,17 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-    LuChevronLeft,
-    LuChevronRight,
-    LuTrophy,
-    LuActivity,
-    LuMedal,
-    LuMapPin,
-    LuCalendar,
-    LuStar,
-    LuX
-} from "react-icons/lu";
+import { LuChevronLeft, LuChevronRight, LuTrophy, LuActivity, LuMedal, LuMapPin, LuCalendar, LuStar, LuX } from "react-icons/lu";
 import { slideVariants } from "../lib/animations";
 
 const sportSlides = [

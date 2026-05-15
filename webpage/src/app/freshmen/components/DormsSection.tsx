@@ -1,33 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import {
-    LuHouse,
-    LuFileText,
-    LuCircleCheck,
-    LuTriangleAlert,
-    LuArrowRight,
-    LuPhone,
-    LuUser,
-    LuInfo,
-    LuCreditCard,
-    LuChevronRight,
-    LuCalendarDays,
-    LuSmartphone,
-    LuMap,
-    LuWifi,
-    LuWaves,
-    LuChefHat,
-    LuHeart,
-    LuShieldAlert,
-    LuGamepad2,
-    LuCode,
-    LuCoffee,
-    LuShirt,
-    LuBath,
-    LuUtensils,
-    LuQuote,
-} from "react-icons/lu";
+import { LuFileText, LuCircleCheck, LuArrowRight, LuMap, LuWifi, LuWaves, LuChefHat, LuHeart, LuShieldAlert, LuShirt, LuBath, LuUtensils, LuQuote, } from "react-icons/lu";
 
 export default function DormsSection() {
     const dorms = [
