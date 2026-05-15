@@ -165,13 +165,13 @@ export default function StepsSection() {
 
                     <div className="p-4 sm:p-6 md:p-8 bg-[var(--accent)] text-white border-2 sm:border-4 border-[var(--foreground)] flex flex-col items-center md:flex-row md:items-center md:justify-between gap-4 md:gap-6 shadow-[6px_6px_0px_0px_var(--foreground)] sm:shadow-[12px_12px_0px_0px_var(--foreground)] relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-32 sm:w-48 h-32 sm:h-48 bg-white/10 rounded-full blur-3xl -mr-12 sm:-mr-24 -mt-12 sm:-mt-24" />
-                        <div className="flex flex-col items-center md:flex-row md:items-center gap-3 md:gap-8 relative z-10 text-center md:text-left">
-                            <div className="hidden md:flex h-16 w-16 items-center justify-center bg-white text-[var(--accent)] border-4 border-[var(--foreground)] rotate-12">
+                        <div className="flex flex-col items-center md:flex-row md:items-center gap-3 md:gap-8 relative z-10 text-center md:text-left w-full">
+                            <div className="hidden md:flex h-16 w-16 shrink-0 items-center justify-center bg-white text-[var(--accent)] border-4 border-[var(--foreground)] rotate-12">
                                 <LuBellRing size={32} className="animate-ring" />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <h4 className="text-lg sm:text-2xl font-black uppercase italic tracking-tighter">НЕ ПЕРЕЖИВАЙ!</h4>
-                                <p className="text-[9px] sm:text-xs md:text-sm font-bold opacity-80 uppercase tracking-widest leading-relaxed max-w-md mx-auto md:mx-0">
+                                <p className="text-[9px] sm:text-xs md:text-sm font-bold opacity-80 uppercase tracking-widest leading-relaxed">
                                     На собрании разберут каждый пункт по полочкам. Просто будь там вовремя.
                                 </p>
                             </div>
