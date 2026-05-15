@@ -15,9 +15,9 @@ export default function Footer() {
                             <h3 className="text-base font-black uppercase tracking-tighter text-[var(--background)]">Приёмная комиссия</h3>
                         </div>
                         <ul className="space-y-2 text-xs font-bold text-[var(--background)]">
-                            <li className="flex items-center gap-2"><LuMail className="text-[var(--accent)] shrink-0" size={14} /> prikom@sibsutis.ru</li>
-                            <li className="flex items-center gap-2"><LuPhone className="text-[var(--accent)] shrink-0" size={14} /> (383) 269-82-28</li>
-                            <li className="flex items-center gap-2"><LuPhone className="text-[var(--accent)] shrink-0" size={14} /> (383) 269-82-29</li>
+                            <li className="flex items-center gap-2"><LuMail className="text-white shrink-0" size={14} /> prikom@sibsutis.ru</li>
+                            <li className="flex items-center gap-2"><LuPhone className="text-white shrink-0" size={14} /> (383) 269-82-28</li>
+                            <li className="flex items-center gap-2"><LuPhone className="text-white shrink-0" size={14} /> (383) 269-82-29</li>
                         </ul>
                     </div>
 
@@ -30,9 +30,9 @@ export default function Footer() {
                         </div>
                         <ul className="space-y-2 text-xs font-bold text-[var(--background)]">
                             <li className="break-all">do.sibsutis.ru/kak_postupit</li>
-                            <li className="flex items-center gap-2"><LuMail className="text-[var(--accent)] shrink-0" size={14} /> dist@sibsutis.ru</li>
-                            <li className="flex items-center gap-2"><LuPhone className="text-[var(--accent)] shrink-0" size={14} /> (383) 269-83-69</li>
-                            <li className="flex items-center gap-2"><LuMapPin className="text-[var(--accent)] shrink-0" size={14} /> ул. Кирова, 86, к. 208</li>
+                            <li className="flex items-center gap-2"><LuMail className="text-white shrink-0" size={14} /> dist@sibsutis.ru</li>
+                            <li className="flex items-center gap-2"><LuPhone className="text-white shrink-0" size={14} /> (383) 269-83-69</li>
+                            <li className="flex items-center gap-2"><LuMapPin className="text-white shrink-0" size={14} /> ул. Кирова, 86, к. 208</li>
                         </ul>
                     </div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
                             <li>rectorat@sibsutis.ru</li>
                             <li>info@sibsutis.ru</li>
                             <li>support@sibsutis.ru</li>
-                            <li className="flex items-center gap-2"><LuPhone className="text-[var(--accent)] shrink-0" size={14} /> (383) 269-82-34</li>
+                            <li className="flex items-center gap-2"><LuPhone className="text-white shrink-0" size={14} /> (383) 269-82-34</li>
                         </ul>
                     </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
                             <li>пн – чт 09:00–17:00</li>
                             <li>пятница 09:00–16:00</li>
                             <li>сб, вс — выходной</li>
-                            <li className="flex items-start gap-2"><LuMapPin className="text-[var(--accent)] shrink-0 mt-0.5" size={14} /> г. Новосибирск, ул. Гурьевская, 51</li>
+                            <li className="flex items-start gap-2"><LuMapPin className="text-white shrink-0 mt-0.5" size={14} /> г. Новосибирск, ул. Гурьевская, 51</li>
                         </ul>
                     </div>
                 </div>
@@ -108,16 +108,16 @@ export default function Footer() {
                                     alt="MAX"
                                     width={22}
                                     height={22}
-                                    className="transition-all duration-300"
+                                    className="transition-all duration-300 brightness-0 invert"
                                 />
                                 <span className="text-[9px] font-black uppercase tracking-wider">Макс</span>
                             </div>
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-6 text-[10px] font-black uppercase tracking-wider">
-                        <button className="hover:text-[var(--accent)] transition-colors">Карта сайта</button>
-                        <button className="hover:text-[var(--accent)] transition-colors">Политика конфиденциальности</button>
-                        <span>© 2026 СибГУТИ. Все права защищены.</span>
+
+                        <span>Министерство цифрового развития, связи и массовых коммуникаций Российской Федерации <br/>
+© 1999-2026 Сибирский государственный университет телекоммуникаций и информатики</span>
                     </div>
                 </div>
             </div>
