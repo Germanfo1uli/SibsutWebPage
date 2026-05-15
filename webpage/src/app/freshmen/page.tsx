@@ -7,42 +7,41 @@ import HeroSection from "./components/HeroSection";
 import SectionLoader from "@/app/components/SectionLoader";
 
 const StepsSection = dynamic(() => import("./components/StepsSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const DormsSection = dynamic(() => import("./components/DormsSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const ClubsSection = dynamic(() => import("./components/ClubsSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const ScholarshipSection = dynamic(() => import("./components/ScholarshipSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const StudyCalendarSection = dynamic(() => import("./components/StudyCalendarSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const NearbyPlacesSection = dynamic(() => import("./components/NearbyPlacesSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const YouthInitiativeSection = dynamic(() => import("./components/YouthInitiativeSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 export default function ApplicantPortal() {
-
     const [activeStep, setActiveStep] = useState(1);
 
     return (
@@ -51,14 +50,13 @@ export default function ApplicantPortal() {
                 <Navigation activeStep={activeStep} setActiveStep={setActiveStep} />
                 <HeroSection />
                 <StepsSection />
-                <DormsSection/>
-                <StudyCalendarSection/>
+                <DormsSection />
+                <StudyCalendarSection />
                 <ClubsSection />
                 <ScholarshipSection />
-                <NearbyPlacesSection/>
-                <YouthInitiativeSection/>
+                <NearbyPlacesSection />
+                <YouthInitiativeSection />
             </div>
-
 
             <style jsx global>{`
                 section {

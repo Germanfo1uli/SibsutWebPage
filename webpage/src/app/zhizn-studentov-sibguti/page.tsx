@@ -4,28 +4,28 @@ import dynamic from "next/dynamic";
 import SectionLoader from "@/app/components/SectionLoader";
 
 const QuickStart = dynamic(() => import("./_components/QuickStart"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const CultureSection = dynamic(() => import("./_components/CultureSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const SportSection = dynamic(() => import("./_components/SportSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const FoodSection = dynamic(() => import("./_components/FoodSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 const HealthSection = dynamic(() => import("./_components/HealthSection"), {
-  loading: () => <SectionLoader />,
-  ssr: true,
+    loading: () => <SectionLoader />,
+    ssr: true,
 });
 
 export default function StudentsPage() {
