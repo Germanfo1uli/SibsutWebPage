@@ -189,7 +189,7 @@ export default function ScholarshipSection() {
                                                         <act.icon size={12} className="sm:w-4 sm:h-4"/>
                                                     </div>
                                                     <span
-                                                        className="text-[8px] sm:text-[9px] font-black uppercase tracking-tight leading-tight text-white break-words">{act.title}</span>
+                                                        className="text-[10px] sm:text-[11px] font-black uppercase tracking-tight leading-tight text-white break-words">{act.title}</span>
                                                 </div>
                                                 <span
                                                     className="text-[6.5px] sm:text-[8px] font-bold uppercase leading-tight text-white/90 break-words block w-full pl-5.5 sm:pl-6">
