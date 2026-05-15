@@ -87,7 +87,7 @@ const stories = [
         link: "https://sibsutis.ru/science/studencheskoe-nauchnoe-obshchestvo-sno.php",
     },
     {
-        image: "https://storage.googleapis.com/banani-generated-images/generated-images/d1213482-7dca-41cb-8e23-f14cbd31fa63.jpg",
+        image: "https://flagfs.ru/content/partii/molodaya-gvardiya-icon.jpg",
         pill: "Патриотика",
         icon: <LuFlag size={18} />,
         title: "Клуб «Молодая Гвардия»",
@@ -143,7 +143,7 @@ const stories = [
         info: "Корпус № 5, Кафедра иностранных и русского языков"
     },
     {
-        image: "https://storage.googleapis.com/banani-generated-images/generated-images/2c914b46-b5fd-4ca4-9d75-070e2e19865a.jpg",
+        image: "https://sun9-21.userapi.com/s/v1/ig2/mJg3eoVMhsYXKorMgjYiavzl4P5jLSAQfsWRoXJ6toM4mBzVIaTIeUv9N3-bb2WhRuk5svG9DnN3kSLZY3HdKsvU.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1280x853,1440x960,2000x1333&from=bu&cs=2000x0",
         pill: "Психология",
         icon: <LuSmile size={18} />,
         title: "Клуб «ТВОЯ СРЕДА»",
@@ -175,8 +175,8 @@ const stories = [
 
 const SkeletonCard = () => (
     <div className="flex flex-col bg-[var(--background)] border-4 border-[var(--foreground)] shadow-[8px_8px_0px_0px_var(--foreground)] animate-pulse">
-        <div className="h-72 w-full bg-[var(--foreground)]/10 border-b-4 border-[var(--foreground)]" />
-        <div className="p-6 md:p-8 flex-1 flex flex-col">
+        <div className="h-48 sm:h-72 w-full bg-[var(--foreground)]/10 border-b-4 border-[var(--foreground)]" />
+        <div className="p-4 sm:p-6 md:p-8 flex-1 flex flex-col">
             <div className="h-8 w-3/4 bg-[var(--foreground)]/20 mb-4" />
             <div className="h-4 w-full bg-[var(--foreground)]/20 mb-2" />
             <div className="h-4 w-5/6 bg-[var(--foreground)]/20 mb-8" />
@@ -215,12 +215,12 @@ export default function CultureSection() {
             <div className="mx-auto w-full max-w-[1400px] px-4 md:px-8">
                 <div className="relative overflow-hidden rounded-[40px] bg-[var(--background)] p-6 md:p-12 lg:p-16 border-4 border-[var(--foreground)] shadow-[12px_12px_0px_0px_var(--foreground)]">
 
-                    <div className="relative z-10 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                        <div>
+                    <div className="relative z-10 mb-16 flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
+                        <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto">
                             <div className="inline-flex items-center gap-2 px-4 py-1 mb-6 bg-[var(--accent)] text-white font-black uppercase tracking-widest -rotate-2 border-2 border-[var(--foreground)]">
                                 <LuPalette size={16} /> Культура и отдых
                             </div>
-                            <h2 className="text-5xl sm:text-7xl lg:text-9xl font-black tracking-tighter leading-none uppercase text-[var(--foreground)]">
+                            <h2 className="text-5xl sm:text-7xl lg:text-9xl font-black tracking-tighter leading-none uppercase text-[var(--foreground)] break-words">
                                 ЖИВИ <span className="comic-title text-[var(--accent)]">ЯРКО</span>
                             </h2>
                         </div>
@@ -244,7 +244,7 @@ export default function CultureSection() {
                                         key={story.title}
                                         className="group relative flex flex-col bg-[var(--background)] border-4 border-[var(--foreground)] shadow-[8px_8px_0px_0px_var(--foreground)] transition-all hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_var(--accent)] cursor-default"
                                     >
-                                        <div className="relative h-72 w-full overflow-hidden border-b-4 border-[var(--foreground)]">
+                                        <div className="relative h-48 sm:h-72 w-full overflow-hidden border-b-4 border-[var(--foreground)]">
                                             <Image
                                                 src={story.image}
                                                 alt={story.title}
@@ -266,7 +266,7 @@ export default function CultureSection() {
                                                         initial={{ opacity: 0, y: 20 }}
                                                         animate={{ opacity: 1, y: 0 }}
                                                         exit={{ opacity: 0, y: 20 }}
-                                                        className="absolute inset-0 z-20 bg-[var(--accent)] p-6 flex flex-col justify-center items-center text-center text-white"
+                                                        className="absolute inset-0 z-20 bg-[var(--accent)] p-4 sm:p-6 flex flex-col justify-center items-center text-center text-white"
                                                     >
                                                         <button
                                                             onClick={(e) => { e.stopPropagation(); setActiveInfo(null); }}
@@ -276,25 +276,25 @@ export default function CultureSection() {
                                                         </button>
                                                         <LuMapPin size={40} className="mb-4" />
                                                         <h4 className="font-black uppercase mb-2">Где найти:</h4>
-                                                        <p className="text-sm font-bold uppercase leading-tight">{story.info}</p>
+                                                        <p className="text-xs sm:text-sm font-bold uppercase leading-tight">{story.info}</p>
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
                                         </div>
 
-                                        <div className="flex flex-1 flex-col p-6 md:p-8">
-                                            <h3 className="text-2xl font-black leading-none uppercase text-[var(--foreground)] mb-4">
+                                        <div className="flex flex-1 flex-col p-4 sm:p-6 md:p-8">
+                                            <h3 className="text-xl sm:text-2xl font-black leading-tight uppercase text-[var(--foreground)] mb-4 break-words">
                                                 {story.title}
                                             </h3>
-                                            <p className="text-xs font-bold leading-relaxed opacity-80 text-[var(--foreground)] mb-8">
+                                            <p className="text-[11px] sm:text-xs font-bold leading-relaxed opacity-80 text-[var(--foreground)] mb-8">
                                                 {story.text}
                                             </p>
 
                                             <button
                                                 onClick={() => handleButtonClick(story)}
-                                                className="mt-auto group/btn relative w-full border-2 border-[var(--foreground)] bg-[var(--accent)] py-4 text-[12px] font-black uppercase tracking-widest text-white transition-all duration-300 flex items-center justify-center gap-3 shadow-[4px_4px_0px_0px_var(--foreground)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer active:scale-95"
+                                                className="mt-auto group/btn relative w-full border-2 border-[var(--foreground)] bg-[var(--accent)] py-3 sm:py-4 px-2 text-[10px] sm:text-[12px] font-black uppercase tracking-widest text-white transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 shadow-[4px_4px_0px_0px_var(--foreground)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer active:scale-95 break-words"
                                             >
-                                                <span className="relative z-10 flex items-center gap-2 pointer-events-none drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                                                <span className="relative z-10 flex items-center gap-1 sm:gap-2 pointer-events-none drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-center justify-center flex-wrap">
                                                     {activeInfo === story.title ? "Закрыть" : story.button}
                                                     {story.link !== "#" && activeInfo !== story.title && <LuArrowRight size={18} className="transition-transform duration-300 group-hover/btn:translate-x-1" />}
                                                 </span>
@@ -309,14 +309,14 @@ export default function CultureSection() {
                     <div className="mt-16 flex justify-center">
                         <button
                             onClick={() => setIsExpanded(!isExpanded)}
-                            className="group relative flex items-center justify-center gap-3 bg-[var(--foreground)] border-4 border-[var(--accent)] px-12 py-5 text-[12px] font-black uppercase tracking-[0.15em] text-[var(--background)] transition-all shadow-[8px_8px_0px_0px_var(--accent)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer"
+                            className="group relative flex items-center justify-center gap-3 bg-[var(--foreground)] border-4 border-[var(--accent)] px-6 sm:px-12 py-4 sm:py-5 text-[10px] sm:text-[12px] font-black uppercase tracking-[0.15em] text-[var(--background)] transition-all shadow-[8px_8px_0px_0px_var(--accent)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer"
                         >
-                            <span className="relative z-10 flex items-center gap-3 uppercase tracking-widest pointer-events-none">
+                            <span className="relative z-10 flex items-center gap-2 sm:gap-3 uppercase tracking-widest pointer-events-none break-words text-center">
                                 {isExpanded ? "Свернуть список" : "Развернуть все секции"}
                                 {isExpanded ? (
-                                    <LuChevronUp size={18} className="transition-transform group-hover:-translate-y-1" />
+                                    <LuChevronUp size={18} className="transition-transform group-hover:-translate-y-1 flex-shrink-0" />
                                 ) : (
-                                    <LuChevronDown size={18} className="transition-transform group-hover:translate-y-1" />
+                                    <LuChevronDown size={18} className="transition-transform group-hover:translate-y-1 flex-shrink-0" />
                                 )}
                             </span>
                         </button>

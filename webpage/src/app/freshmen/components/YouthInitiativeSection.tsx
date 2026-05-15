@@ -15,9 +15,9 @@ export default function YouthInitiativeSection() {
     };
 
     return (
-        <section id="initiative" className="py-20">
-            <div className="mx-auto w-full max-w-[1400px] px-4 md:px-8">
-                <div className="relative overflow-hidden rounded-[40px] bg-[var(--accent)] p-6 md:p-12 lg:p-16 border-4 border-[var(--foreground)] shadow-[12px_12px_0px_0px_var(--foreground)] text-white">
+        <section id="initiative" className="py-12 md:py-20">
+            <div className="mx-auto w-full max-w-[1400px] px-3 sm:px-4 md:px-8">
+                <div className="relative overflow-hidden rounded-[20px] sm:rounded-[40px] bg-[var(--accent)] p-4 sm:p-6 md:p-12 lg:p-16 border-2 sm:border-4 border-[var(--foreground)] shadow-[6px_6px_0px_0px_var(--foreground)] sm:shadow-[12px_12px_0px_0px_var(--foreground)] text-white">
 
                     <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
                         <div className="relative w-full h-full">
@@ -40,40 +40,40 @@ export default function YouthInitiativeSection() {
                     </div>
 
                     <div className="relative z-10 flex flex-col lg:w-3/5 gap-8">
-                        <div>
-                            <div className="inline-flex items-center gap-2 px-4 py-1 mb-8 bg-[var(--foreground)] text-[var(--background)] font-black uppercase tracking-widest -rotate-2 border-2 border-white shadow-[4px_4px_0px_0px_white]">
+                        <div className="text-center lg:text-left">
+                            <div className="inline-flex items-center gap-2 px-2 sm:px-4 py-1 mb-4 sm:mb-8 bg-[var(--foreground)] text-[var(--background)] font-black uppercase tracking-widest text-[9px] sm:text-xs md:text-sm -rotate-2 border-2 border-white shadow-[2px_2px_0px_0px_white] sm:shadow-[4px_4px_0px_0px_white]">
                                 <LuLightbulb size={16} />
                                 ПЛОЩАДКА ВОЗМОЖНОСТЕЙ
                             </div>
-                            <h2 className="text-4xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] uppercase mb-8 drop-shadow-[4px_4px_0_var(--foreground)]">
+                            <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.9] uppercase mb-4 sm:mb-8 drop-shadow-[2px_2px_0_var(--foreground)] sm:drop-shadow-[4px_4px_0_var(--foreground)]">
                                 МОЛОДЁЖНАЯ <br/> ИНИЦИАТИВА
                             </h2>
-                            <p className="text-xl md:text-2xl font-bold uppercase leading-tight text-white mb-0 max-w-xl">
+                            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold uppercase leading-tight text-white mb-0 max-w-xl mx-auto lg:mx-0">
                                 ХОЧЕШЬ ЗАПУСТИТЬ СВОЙ ПРОЕКТ ИЛИ ЕСТЬ ИДЕИ, КАК СДЕЛАТЬ ВУЗ ЛУЧШЕ? МЫ ЖДЕМ ТЕБЯ!
                             </p>
                         </div>
 
 
-                        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center">
                             <button
                                 onClick={copyToClipboard}
-                                className="group relative flex items-center w-full sm:w-auto gap-3 sm:gap-4 bg-[var(--background)] text-[var(--foreground)] px-4 py-4 sm:px-6 md:px-10 border-4 border-[var(--foreground)] shadow-[6px_6px_0px_0px_var(--foreground)] sm:shadow-[8px_8px_0px_0px_var(--foreground)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 overflow-hidden"
+                                className="group relative flex items-center w-full sm:w-auto gap-2 sm:gap-3 md:gap-4 bg-[var(--background)] text-[var(--foreground)] px-3 sm:px-4 md:px-6 lg:px-10 py-3 sm:py-4 border-2 sm:border-4 border-[var(--foreground)] shadow-[4px_4px_0px_0px_var(--foreground)] sm:shadow-[8px_8px_0px_0px_var(--foreground)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all active:scale-95 overflow-hidden"
                             >
                                 <div className="bg-[var(--accent)] text-white p-2 sm:p-3 border-2 border-[var(--foreground)] -rotate-6 group-hover:rotate-0 transition-transform shrink-0">
-                                    <LuMail size={22} className="sm:w-7 sm:h-7" />
+                                    <LuMail size={18} className="sm:w-6 sm:h-6" />
                                 </div>
-                                <div className="flex flex-col items-start min-w-0">
-                                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[var(--accent)] mb-0.5 truncate w-full">Кликни, чтобы скопировать:</span>
+                                <div className="flex flex-col items-start min-w-0 flex-1">
+                                    <span className="text-[8px] sm:text-[10px] font-black uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[var(--accent)] mb-0.5 truncate w-full">Кликни, чтобы скопировать:</span>
                                     <span className="text-base sm:text-xl md:text-2xl font-black lowercase tracking-tighter decoration-[var(--accent)] decoration-2 sm:decoration-4 group-hover:underline truncate w-full">
                                         {email}
                                     </span>
                                 </div>
-                                <div className="ml-auto sm:ml-4 flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center shrink-0 rounded-full bg-[var(--accent)]/10 text-[var(--accent)]">
+                                <div className="ml-2 sm:ml-4 flex h-7 w-7 sm:h-10 sm:w-10 items-center justify-center shrink-0 rounded-full bg-[var(--accent)]/10 text-[var(--accent)]">
                                     {copied ? <LuCheck size={18} /> : <LuCopy size={18} />}
                                 </div>
 
                                 {copied && (
-                                    <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-[var(--background)] px-3 py-1 text-[8px] sm:text-[10px] font-black uppercase border-2 border-white animate-bounce">
+                                    <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-[var(--background)] px-2 sm:px-3 py-1 text-[8px] sm:text-[10px] font-black uppercase border-2 border-white animate-bounce">
                                         Скопировано!
                                     </div>
                                 )}
@@ -81,8 +81,8 @@ export default function YouthInitiativeSection() {
                         </div>
                     </div>
 
-                    <div className="absolute bottom-[-50px] right-[-50px] lg:hidden">
-                        <LuRocket size={200} className="text-white opacity-10 -rotate-12" />
+                    <div className="absolute bottom-[-40px] right-[-40px] sm:bottom-[-50px] sm:right-[-50px] lg:hidden">
+                        <LuRocket size={160} className="sm:w-[200px] sm:h-[200px] text-white opacity-10 -rotate-12" />
                     </div>
                 </div>
             </div>

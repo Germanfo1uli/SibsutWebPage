@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { LuArrowDown } from "react-icons/lu";
 import nav1 from "@/assets/asset_nav1.jpg";
 import nav2 from "@/assets/asset_nav2.jpg";
 import nav3 from "@/assets/asset_nav3.jpg";
@@ -34,7 +33,7 @@ export default function HeroSection() {
         {
             number: "04",
             title: "Чем заняться",
-            desc: "Студ жизнь и клубы",
+            desc: "Студжизнь и клубы",
             id: "clubs",
             image: nav4
         },
@@ -55,63 +54,53 @@ export default function HeroSection() {
     };
 
     return (
-        <section className="relative w-full overflow-hidden bg-white pt-24 md:pt-32 pb-10 md:pb-20">
-            <div className="mx-auto w-full max-w-[1400px] px-6 md:px-12">
-                <div className="relative z-10 flex flex-col items-start lg:flex-row lg:items-end lg:justify-between">
-                    <div className="max-w-4xl">
-                        <div className="inline-block px-4 py-1 mb-6 bg-[var(--accent)] text-[var(--background)] font-black uppercase tracking-widest -rotate-2 border-2 border-[var(--foreground)]">
-                            Справочник абитуриенту
-                        </div>
-                        <h1 className="text-6xl font-black uppercase tracking-tighter sm:text-8xl lg:text-[160px] leading-[0.85]">
-                            ТВОЙ <span className="comic-title italic">СТАРТ</span> <br />
-                            <span className="normal-case">В СибГУТИ</span>
-                        </h1>
-                        <p className="mt-12 max-w-2xl text-xl font-bold uppercase leading-tight italic opacity-70">
-                            Мы собрали всё, что нужно знать первокурснику <br /> в одном месте. <br />
-                            Проходи уровни, получай инфу и врывайся <br /> в студенчество.
-                        </p>
-                    </div>
+        <section className="relative w-full overflow-hidden bg-white pt-8 sm:pt-12 md:pt-24 pb-8 sm:pb-12 md:pb-24">
+            <div className="mx-auto w-full max-w-[1400px] px-3 sm:px-4 md:px-8 lg:px-12">
 
-                    <div className="mt-12 lg:mt-0">
-                        <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-[var(--foreground)] bg-[var(--accent)] shadow-[8px_8px_0px_0px_var(--foreground)] animate-bounce">
-                            <LuArrowDown size={48} className="text-[var(--background)]" />
-                        </div>
-                    </div>
+                <div className="flex flex-col items-center text-center mb-8 sm:mb-12 md:mb-16">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[140px] font-black uppercase tracking-tighter leading-[0.85] max-w-5xl">
+                        ТВОЙ <span className="comic-title italic">СТАРТ</span>
+                        <br />
+                        <span className="normal-case">В СибГУТИ</span>
+                    </h1>
+                    <p className="mt-4 sm:mt-8 md:mt-12 text-xs sm:text-sm md:text-lg lg:text-xl font-bold uppercase leading-snug italic opacity-70 max-w-xl sm:max-w-2xl px-2">
+                        Мы собрали всё, что нужно знать первокурснику в одном месте. Проходи уровни, получай инфу и врывайся в студенчество.
+                    </p>
                 </div>
 
-                <div className="mt-16 md:mt-20 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                <div className="mt-6 sm:mt-10 md:mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-5">
                     {levels.map((level) => (
                         <button
                             key={level.number}
                             onClick={() => scrollToSection(level.id)}
-                            className="group relative h-[280px] sm:h-[320px] md:h-[360px] lg:h-[450px] w-full overflow-hidden border-4 border-[var(--foreground)] bg-[var(--card)] transition-all hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_var(--accent)] flex flex-col"
+                            className="group relative h-[170px] sm:h-[180px] md:h-[240px] lg:h-[380px] w-full overflow-hidden border-2 md:border-4 border-[var(--foreground)] bg-[var(--card)] transition-all hover:-translate-y-1 sm:hover:-translate-y-2 hover:shadow-[4px_4px_0px_0px_var(--accent)] sm:hover:shadow-[8px_8px_0px_0px_var(--accent)] md:hover:shadow-[12px_12px_0px_0px_var(--accent)] flex flex-col"
                         >
                             <Image
                                 src={level.image}
                                 alt={level.title}
                                 fill
                                 priority={true}
-                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
-                                className="object-cover object-center opacity-50 grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100"
+                                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                                className="object-cover object-center opacity-70 sm:opacity-50 grayscale transition-all duration-500 group-hover:scale-110 group-hover:grayscale-0 group-hover:opacity-100"
                             />
 
-                            <div className="absolute inset-0 bg-gradient-to-t from-[var(--foreground)] via-[var(--foreground)]/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-50" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[var(--foreground)] via-[var(--foreground)]/40 to-transparent opacity-80 sm:opacity-90 transition-opacity duration-500 group-hover:opacity-50" />
 
-                            <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8 text-left z-20">
-                                <div className="text-3xl sm:text-4xl lg:text-5xl font-black italic opacity-30 group-hover:opacity-100 group-hover:text-[var(--accent)] transition-all text-white">
+                            <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-3 md:p-6 text-left z-20">
+                                <div className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-black italic opacity-30 group-hover:opacity-100 group-hover:text-[var(--accent)] transition-all text-white">
                                     {level.number}
                                 </div>
                                 <div className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mt-auto">
-                                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-black uppercase leading-none tracking-tighter text-white group-hover:text-[var(--accent)] transition-colors">
+                                    <h3 className="text-base sm:text-base md:text-2xl lg:text-3xl font-black uppercase leading-none tracking-tighter text-white group-hover:text-[var(--accent)] transition-colors text-left">
                                         {level.title}
                                     </h3>
-                                    <p className="mt-2 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/90 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="mt-1 sm:mt-1 md:mt-2 text-[8px] sm:text-[9px] md:text-xs font-bold uppercase tracking-tight sm:tracking-widest text-white/90 transition-opacity duration-300 hidden sm:block text-left">
                                         {level.desc}
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-0 left-0 h-2 w-0 bg-[var(--accent)] transition-all duration-500 group-hover:w-full z-30" />
+                            <div className="absolute bottom-0 left-0 h-1.5 md:h-2 w-0 bg-[var(--accent)] transition-all duration-500 group-hover:w-full z-30" />
                         </button>
                     ))}
                 </div>

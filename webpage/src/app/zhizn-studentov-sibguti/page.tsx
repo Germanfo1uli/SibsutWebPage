@@ -3,27 +3,27 @@
 import dynamic from "next/dynamic";
 import SectionLoader from "@/app/components/SectionLoader";
 
-const QuickStart = dynamic(() => import("./_components/QuickStart"), {
+const QuickStart = dynamic(() => import("@/app/zhizn-studentov-sibguti/сomponents/QuickStart"), {
     loading: () => <SectionLoader />,
     ssr: true,
 });
 
-const CultureSection = dynamic(() => import("./_components/CultureSection"), {
+const CultureSection = dynamic(() => import("@/app/zhizn-studentov-sibguti/сomponents/CultureSection"), {
     loading: () => <SectionLoader />,
     ssr: true,
 });
 
-const SportSection = dynamic(() => import("./_components/SportSection"), {
+const SportSection = dynamic(() => import("@/app/zhizn-studentov-sibguti/сomponents/SportSection"), {
     loading: () => <SectionLoader />,
     ssr: true,
 });
 
-const FoodSection = dynamic(() => import("./_components/FoodSection"), {
+const FoodSection = dynamic(() => import("@/app/zhizn-studentov-sibguti/сomponents/FoodSection"), {
     loading: () => <SectionLoader />,
     ssr: true,
 });
 
-const HealthSection = dynamic(() => import("./_components/HealthSection"), {
+const HealthSection = dynamic(() => import("@/app/zhizn-studentov-sibguti/сomponents/HealthSection"), {
     loading: () => <SectionLoader />,
     ssr: true,
 });

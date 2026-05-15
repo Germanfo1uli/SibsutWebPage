@@ -107,6 +107,12 @@ const nextConfig: NextConfig = {
                 port: '',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'flagfs.ru',
+                port: '',
+                pathname: '/**',
+            },
         ],
     },
 };
