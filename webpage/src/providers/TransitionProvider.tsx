@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
-import loaderGif from "../../../../../SibsutWebPage/webpage/app/components/asset/loader.gif";
+import loaderGif from "@/assets/loader.gif";
 
 const TransitionContext = createContext<{ navigate: (href: string) => void }>({ navigate: () => {} });
 

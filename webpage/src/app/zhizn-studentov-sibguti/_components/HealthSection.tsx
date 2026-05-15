@@ -15,9 +15,9 @@ import {
     LuHeart
 } from "react-icons/lu";
 import { slideVariants } from "../lib/animations";
-import asset_zdravp1 from "../../components/asset2/asset_zdravp1.jpg";
-import asset_zdravp2 from "../../components/asset2/asset_zdravp2.jpg";
-import asset_zdravp3 from "../../components/asset2/asset_zdravp3.jpg";
+import asset_zdravp1 from "@/assets/asset_zdravp1.jpg";
+import asset_zdravp2 from "@/assets/asset_zdravp2.jpg";
+import asset_zdravp3 from "@/assets/asset_zdravp3.jpg";
 
 const healthImages = [
     {

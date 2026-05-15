@@ -12,11 +12,11 @@ import {
 } from "react-icons/lu";
 import Link from "next/link";
 
-import asset_club1 from "../../components/asset2/asset_club1.jpg";
-import asset_club2 from "../../components/asset2/asset_club2.jpg";
-import asset_club3 from "../../components/asset2/asset_club3.jpg";
-import asset_club4 from "../../components/asset2/asset_club4.jpg";
-import asset_club5 from "../../components/asset2/asset_club5.jpg";
+import asset_club1 from "@/assets/asset_club1.jpg";
+import asset_club2 from "@/assets/asset_club2.jpg";
+import asset_club3 from "@/assets/asset_club3.jpg";
+import asset_club4 from "@/assets/asset_club4.jpg";
+import asset_club5 from "@/assets/asset_club5.jpg";
 
 export default function ClubsSection() {
     const clubs = [

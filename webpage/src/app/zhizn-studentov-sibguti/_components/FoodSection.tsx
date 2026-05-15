@@ -5,9 +5,9 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LuChevronLeft, LuChevronRight, LuMapPin, LuInfo, LuUtensils, LuCoffee } from "react-icons/lu";
 import { slideVariants } from "../lib/animations";
-import asset_food1 from "../../components/asset2/asset_food1.jpg";
-import asset_food2 from "../../components/asset2/asset_food2.jpg";
-import asset_food3 from "../../components/asset2/asset_food3.jpg";
+import asset_food1 from "@/assets/asset_food1.jpg";
+import asset_food2 from "@/assets/asset_food2.jpg";
+import asset_food3 from "@/assets/asset_food3.jpg";
 
 const foodImages = [
     {

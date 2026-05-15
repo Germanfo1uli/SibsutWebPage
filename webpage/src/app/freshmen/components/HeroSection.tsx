@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { LuArrowDown } from "react-icons/lu";
-import nav1 from "@/app/components/asset2/asset_nav1.jpg";
-import nav2 from "@/app/components/asset2/asset_nav2.jpg";
-import nav3 from "@/app/components/asset2/asset_nav3.jpg";
-import nav4 from "@/app/components/asset2/asset_nav4.jpg";
-import nav5 from "@/app/components/asset2/asset_nav5.jpg";
+import nav1 from "@/assets/asset_nav1.jpg";
+import nav2 from "@/assets/asset_nav2.jpg";
+import nav3 from "@/assets/asset_nav3.jpg";
+import nav4 from "@/assets/asset_nav4.jpg";
+import nav5 from "@/assets/asset_nav5.jpg";
 
 export default function HeroSection() {
     const levels = [

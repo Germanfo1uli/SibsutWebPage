@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaTelegramPlane, FaVk } from "react-icons/fa";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import logo from "./asset/logo.svg";
+import logo from "@/assets/logo.svg";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
