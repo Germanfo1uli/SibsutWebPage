@@ -68,7 +68,7 @@ export default function ClubsSection() {
                 <div className="relative overflow-hidden rounded-[40px] bg-white p-6 md:p-12 lg:p-16 border-4 border-[var(--foreground)] shadow-[12px_12px_0px_0px_var(--foreground)]">
 
                     <div className="relative z-10 mb-16 flex flex-col xl:flex-row xl:items-end justify-between gap-8">
-                        <div className="flex-1">
+                        <div className="flex-1 text-center xl:text-left">
                             <div className="inline-block px-4 py-1 mb-6 bg-[var(--accent)] text-white font-black uppercase tracking-widest -rotate-2 border-2 border-[var(--foreground)]">
                                 Уровень 04 / Активности
                             </div>
@@ -102,16 +102,17 @@ export default function ClubsSection() {
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-90 group-hover:opacity-70 transition-opacity z-20" />
 
-                                <div className="absolute inset-0 p-4 md:p-8 flex flex-col justify-end items-start z-30">
-                                    <div className="mb-4 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center bg-[var(--accent)] text-white border-4 border-[var(--foreground)] shadow-[4px_4px_0px_0px_var(--foreground)] rotate-3 group-hover:rotate-0 transition-transform">
+                                <div className="absolute inset-0 p-4 md:p-8 flex flex-col justify-end items-start z-30 overflow-hidden">
+                                    <div className="mb-4 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center bg-[var(--accent)] text-white border-4 border-[var(--foreground)] shadow-[4px_4px_0px_0px_var(--foreground)] rotate-3 group-hover:rotate-0 transition-transform flex-shrink-0">
                                         <club.icon size={24} className="md:w-7 md:h-7" />
                                     </div>
 
                                     <h3 className={`${
                                         club.size === "large"
-                                            ? "text-2xl md:text-4xl"
-                                            : "text-xl md:text-2xl"
-                                    } font-black uppercase tracking-tighter text-white mb-2 italic leading-none drop-shadow-lg`}>
+                                            ? "text-base sm:text-xl md:text-2xl lg:text-4xl"
+                                            : "text-base sm:text-lg md:text-xl lg:text-2xl"
+                                    } font-black uppercase tracking-tighter text-white mb-2 italic leading-tight drop-shadow-lg w-full pr-2 overflow-hidden`}
+                                        style={{ wordBreak: "break-word", hyphens: "auto" }}>
                                         {club.title}
                                     </h3>
 
@@ -127,14 +128,15 @@ export default function ClubsSection() {
                         ))}
                     </div>
 
-                    <div className="mt-16 flex justify-center">
+                    <div className="mt-12 sm:mt-16 flex justify-center px-4">
                         <Link
                             href="/zhizn-studentov-sibguti#culture"
-                            className="group relative px-12 py-6 bg-[var(--accent)] !text-white border-4 border-[var(--foreground)] shadow-[10px_10px_0px_0px_var(--foreground)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all"
+                            className="group relative px-6 sm:px-10 py-4 sm:py-6 bg-[var(--accent)] !text-white border-4 border-[var(--foreground)] shadow-[10px_10px_0px_0px_var(--foreground)] hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all w-fit"
                         >
-                            <span className="text-xl font-black uppercase tracking-tighter flex items-center gap-4">
-                                Подробнее о других активностях
-                                <LuArrowUpRight size={32} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                            <span className="text-xs sm:text-sm md:text-lg font-black uppercase tracking-tighter flex items-center gap-2 sm:gap-3">
+                                <span className="hidden sm:inline">Подробнее о других активностях</span>
+                                <span className="sm:hidden">Все активности</span>
+                                <LuArrowUpRight size={18} className="sm:size-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </span>
                         </Link>
                     </div>
