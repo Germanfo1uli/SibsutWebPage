@@ -125,7 +125,7 @@ export default function FoodSection() {
                                         <LuMapPin size={24} />
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                        <h4 className="font-black text-lg uppercase text-[var(--foreground)] leading-none mb-1 break-words">{loc.name}</h4>
+                                        <h4 className="font-black text-lg uppercase text-[var(--foreground)] leading-none mb-1">{loc.name}</h4>
                                         <div className="text-xs font-black text-[var(--accent)] uppercase tracking-wider break-words">{loc.address}</div>
                                         <div className="text-[10px] font-bold text-[var(--foreground)] opacity-70 mt-1 uppercase leading-tight">{loc.info}</div>
                                     </div>

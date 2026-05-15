@@ -138,7 +138,7 @@ export default function HealthSection() {
                                         <LuStethoscope size={28} />
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                        <h4 className="font-black text-lg sm:text-xl uppercase text-[var(--foreground)] leading-none mb-1 break-words">Здравпункт</h4>
+                                        <h4 className="font-black text-lg sm:text-xl uppercase text-[var(--foreground)] leading-none mb-1">Здравпункт</h4>
                                         <div className="text-[11px] sm:text-xs font-black text-[var(--accent)] uppercase tracking-wider break-words">ГБУЗ НСО «ГП № 2»</div>
                                     </div>
                                 </div>
@@ -170,7 +170,7 @@ export default function HealthSection() {
                                 </p>
                             </div>
 
-                            <div className="group flex flex-col gap-3 p-4 sm:p-5 border-4 border-[var(--foreground)] bg-[var(--background)] shadow-[8px_8px_0px_0px_var(--foreground)] transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_var(--accent)]">
+                            <div className="group flex flex-col gap-3 p-4 sm:p-5 border-4 border-[var(--foreground)] bg-[var(--background)] shadow-[8px_8px_0px_0px_var(--foreground)] transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_var(--accent)]">
                                 <div className="flex items-center gap-2 sm:gap-3 border-b-2 border-[var(--foreground)] pb-2">
                                     <LuHeart size={20} className="text-[var(--accent)] flex-shrink-0" />
                                     <h4 className="font-black text-sm sm:text-base uppercase tracking-tighter break-words">Психологическая помощь</h4>
