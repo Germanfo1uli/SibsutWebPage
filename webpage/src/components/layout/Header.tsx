@@ -12,7 +12,7 @@ export default function Header() {
 
     const navItems = [
         { label: "Жизнь студента", href: "/zhizn-studentov-sibguti" },
-        { label: "Памятка абитуриента", href: "/freshmen" },
+        { label: "Памятка первокурснику", href: "/freshmen" },
     ];
 
     return (
